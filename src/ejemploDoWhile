@@ -1,0 +1,13 @@
+#!/bin/bash
+
+continue="n"
+
+while :
+do
+	read -p "Continuar? (s/n): " continue
+	[ $continue == "s" ] || break
+done
+
+exit 0
+
+

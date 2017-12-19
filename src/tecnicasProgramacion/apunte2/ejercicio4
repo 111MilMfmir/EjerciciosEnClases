@@ -1,0 +1,15 @@
+#!/bin/bash
+
+read -p "Numero: " number1 
+read -p "Numero: " number2
+read -p "Numero: " number3
+read -p "Numero: " number4
+
+if ((number1 == number2 || number3 == number4))
+then 
+	echo "Hay igualdad 1-2 o 3-4"
+fi
+
+exit 0
+
+

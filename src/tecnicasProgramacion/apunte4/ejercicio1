@@ -1,0 +1,7 @@
+#!/bin/bash
+
+read -p "Numero: " number1
+max=number1
+min=number1
+
+read -p "

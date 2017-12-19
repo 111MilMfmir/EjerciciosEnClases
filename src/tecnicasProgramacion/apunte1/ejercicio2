@@ -1,0 +1,16 @@
+#!/bin/bash
+
+read -p "DNI: " dni
+read -p "Nombre" name
+read -p "Apellido: " surname
+read -p "Direccion: " address
+read -p "Telefono. " phoneNumber
+
+echo $dni
+echo $name
+echo $surname
+echo $address
+echo $phoneNumber
+
+exit 0
+

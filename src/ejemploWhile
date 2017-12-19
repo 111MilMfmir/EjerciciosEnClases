@@ -1,0 +1,12 @@
+#!/bin/bash
+
+otro="s"
+
+while [ $otro == "s" ]
+do
+	read -p "Repetir?(s/n): " otro
+done	
+
+
+exit 0
+

@@ -1,0 +1,23 @@
+#!/bin/bash
+
+function dividers() {
+		declare -i number1=$1
+		declare -i dividers=0
+
+		for ((i = 1; i <= number1; i++)) {
+			if ((number1 % i == 0))
+			then
+				dividers=$((dividers + 1))
+			fi
+		}
+
+		echo $dividers
+}		
+
+read -p "Ingresar un Numero: " number
+result=$(dividers $number)
+echo "Cantidad de divisores: $result"
+
+exit 0
+
+

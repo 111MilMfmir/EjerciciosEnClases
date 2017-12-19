@@ -1,0 +1,23 @@
+#!/bin/bash
+
+function areMultiple() {
+	declare -i number1=$1
+	declare -i number2=$2
+
+	if ((number1 % number2 == 0)) || ((number2 % number1 == 0))
+	then
+		echo "numero1 y numero2 son multiplos"
+	else
+		echo "numero1 y numero2 no son multiplos"
+	fi
+}
+
+declare -i number1=0
+read -p "Numero: " number1
+
+declare -i number2=0
+read -p "Numero: " number2
+
+areMultiple $number1 $number2
+
+exit 0

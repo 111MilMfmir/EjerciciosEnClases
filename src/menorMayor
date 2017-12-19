@@ -1,0 +1,43 @@
+#!/bin/bash
+
+read -p "Ingrese un numero: " number1
+mayor=$number1
+menor=$number1
+
+read -p "Ingrese un segundo numero: " number2
+if((number2 > mayor))
+then
+	mayor=$number2
+fi
+
+if((number2 < menor))
+then
+	menor=$number2
+fi
+
+read -p "Ingrese un tercer numero: " number3
+if((number3 > mayor))
+then
+	mayor=$number3
+fi
+
+if((number3 < menor))
+then
+	menor=$number3
+fi
+
+if((number1 != mayor && number1 != menor))
+then
+	medio=$number1
+elif((number2 != mayor && number2 != menor))
+then
+	medio=$number2
+else
+	medio=$number3
+fi
+
+echo $menor
+echo $medio
+echo $mayor
+
+exit 0

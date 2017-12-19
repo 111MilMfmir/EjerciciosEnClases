@@ -1,0 +1,11 @@
+#!/bin/bash
+
+number=0
+
+while (( number < 100 ) )
+do
+	echo $number
+	read -p "ingresar otro numero: " number
+done	
+
+exit 0

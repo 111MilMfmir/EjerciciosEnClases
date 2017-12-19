@@ -1,0 +1,18 @@
+#!/bin/bash
+
+read -p "Numero: " number
+
+clear
+
+echo "Tabla del: $number"
+echo "===== ==="
+echo
+
+for ((i=1;i<10;i++)){
+	echo "$number x $i: $((number*i))"
+}	
+
+echo
+
+exit 0
+

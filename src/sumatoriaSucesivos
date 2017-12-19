@@ -1,0 +1,22 @@
+#!/bin/bash
+
+function summatory(){
+	declare -i number=$1
+	declare -i result=0
+
+	for (( i = 1; i <= number; i++)) {
+		result=$((result + i))
+	}
+
+	echo $result
+}
+
+declare -i number1=0
+read -p "Numero: " number1
+
+declare -i summatoryResult=$(summatory $number1)
+
+echo "Sumatoria: $summatoryResult"
+
+exit 0
+

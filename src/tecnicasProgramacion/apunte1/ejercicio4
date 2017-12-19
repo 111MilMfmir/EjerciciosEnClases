@@ -1,0 +1,11 @@
+#!/bin/bash
+
+read -p "Numero: " number1
+read -p "Numero: " number2
+
+result=$((number1 + number2))
+
+echo "La suma de $number1 mas $number2 es $result"
+
+exit 0
+
